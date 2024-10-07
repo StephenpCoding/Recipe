@@ -1,0 +1,30 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin scrollNone {//消除滚动条
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+}
+
+@mixin chosen {//选中的话，变成这个蓝色
+  background-color: rgba(0, 119, 255, 0.601);
+  border: 1px solid black;
+}
+
+@mixin lastChosen {//不选中 是这个颜色
+  background-color: rgba(0, 255, 255, 0.145);
+  border: 1px dashed gray;
+}

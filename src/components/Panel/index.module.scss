@@ -1,0 +1,13 @@
+@use "src/utils/index.scss" as base;
+
+.panel {
+  @include base.flexColumn;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.info {
+  display: inline-block;
+}
